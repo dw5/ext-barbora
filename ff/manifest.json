@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "URL Modifier Extension",
+    "version": "1.0",
+    "description": "Automatically appends 'order=priceAsc' to URLs except excluded ones.",
+    "permissions": [
+        "*://*.barbora.lt/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.barbora.lt/*"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "applications": {
+        "gecko": {
+            "id": "url-modifier@example.com"
+        }
+    }
+}
