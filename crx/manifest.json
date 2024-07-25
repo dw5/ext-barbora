@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "URL Modifier Extension",
+    "name": "Barbora URL Modifier",
     "version": "1.0",
-    "description": "Automatically appends 'order=priceAsc' to URLs except excluded ones.",
+    "description": "Automatically appends 'order=priceAsc' to URLs except the excluded ones.",
     "permissions": [
         "webNavigation",
         "tabs"

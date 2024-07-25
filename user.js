@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Barbora URL Modifier
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.0
 // @description  Automatically add ?order=priceAsc or &order=priceAsc to Barbora.lt URLs if not set, excluding certain paths and subdomains.
 // @author       dw5
 // @match        *://*.barbora.lt/*

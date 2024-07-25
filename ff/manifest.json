@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "URL Modifier Extension",
+    "name": "Barbora URL Modifier",
     "version": "1.0",
-    "description": "Automatically appends 'order=priceAsc' to URLs except excluded ones.",
+    "description": "Automatically appends 'order=priceAsc' to URLs except the excluded ones.",
     "permissions": [
         "*://*.barbora.lt/*"
     ],
@@ -12,10 +12,5 @@
             "js": ["content.js"],
             "run_at": "document_start"
         }
-    ],
-    "applications": {
-        "gecko": {
-            "id": "url-modifier@example.com"
-        }
-    }
+    ]
 }
