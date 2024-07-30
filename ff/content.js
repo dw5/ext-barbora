@@ -1,4 +1,4 @@
-/* 2024-07-25 */
+/* 2024-07-30 */
 
 (function() {
     'use strict';
@@ -11,8 +11,9 @@
         const fileExtensionPattern = /\.[^\/]+$/;
         const excludedPaths = [
             '/produktai/',
-            '/atsiskaitymas/',
-            '/krepselis/'
+            '/krepselis',
+            '/pristatymas',
+            '/atsiskaitymas'
         ];
 
         // Check for excluded subdomain
@@ -36,7 +37,7 @@
             console.log(`Excluded path: ${url.pathname}`);
             return;
         } else {
-            console.log("Path not excluded");
+            console.log(`Path not excluded: ${url.pathname}`);
 
             // Check if the "order" parameter is present
             if (!url.searchParams.has('order')) {

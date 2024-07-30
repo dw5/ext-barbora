@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Barbora URL Modifier
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  Automatically add ?order=priceAsc or &order=priceAsc to Barbora.lt URLs if not set, excluding certain paths and subdomains.
 // @author       dw5
 // @match        *://*.barbora.lt/*
 // @grant        none
 // ==/UserScript==
 
-/* 2024-07-25 */
+/* 2024-07-30 */
 
 (function() {
     'use strict';
@@ -21,8 +21,9 @@
         const fileExtensionPattern = /\.[^\/]+$/;
         const excludedPaths = [
             '/produktai/',
-            '/atsiskaitymas/',
-            '/krepselis/'
+            '/krepselis',
+            '/pristatymas',
+            '/atsiskaitymas'
         ];
 
         // Check for excluded subdomain
@@ -46,7 +47,7 @@
             console.log(`Excluded path: ${url.pathname}`);
             return;
         } else {
-            console.log("Path not excluded");
+            console.log(`Path not excluded: ${url.pathname}`);
 
             // Check if the "order" parameter is present
             if (!url.searchParams.has('order')) {
