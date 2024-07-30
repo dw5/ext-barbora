@@ -1,14 +1,16 @@
 // ==UserScript==
 // @name         Barbora URL Modifier
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      2.0
 // @description  Automatically add ?order=priceAsc or &order=priceAsc to Barbora.lt URLs if not set, excluding certain paths and subdomains.
 // @author       dw5
 // @match        *://*.barbora.lt/*
 // @grant        none
+// @downloadURL  https://github.com/dw5/ext-barbora/main/user.js
+// @updateURL    https://github.com/dw5/ext-barbora/main/user.js
 // ==/UserScript==
 
-/* 2024-07-30 */
+/* 2024-07-30b */
 
 (function() {
     'use strict';
@@ -23,7 +25,12 @@
             '/produktai/',
             '/krepselis',
             '/pristatymas',
-            '/atsiskaitymas'
+            '/atsiskaitymas',
+			'/mano-prekes',
+			'/info/',
+			'/akcijos',
+			'/aciu-kaina',
+			'/mano-prekes'
         ];
 
         // Check for excluded subdomain

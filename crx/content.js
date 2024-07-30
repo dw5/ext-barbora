@@ -1,4 +1,4 @@
-/* 2024-07-30 */
+/* 2024-07-30b */
 
 (function() {
     'use strict';
@@ -13,7 +13,12 @@
             '/produktai/',
             '/krepselis',
             '/pristatymas',
-            '/atsiskaitymas'
+            '/atsiskaitymas',
+			'/mano-prekes',
+			'/info/',
+			'/akcijos',
+			'/aciu-kaina',
+			'/mano-prekes'
         ];
 
         // Check for excluded subdomain
